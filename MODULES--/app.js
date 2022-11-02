@@ -25,6 +25,8 @@ console.log('Free Memory Is: ' + freeMemory)
 
 // File System Module Implementation ------------------------------------>
 const fs = require('fs') // Loading File System Module - Node JS
+    
+fs.copyFileSync('app.js' , 'app2.js') // Copying app.js to app2.js
 
 const files = fs.readdirSync('./') //Synchronous way to get files access
 console.log(files)
