@@ -9,7 +9,6 @@ console.log(pathObject)
 
 
 
-
 // OS Module Implementation ---------------------------------------------->
 const os = require('os') // Loading OS Module - Node JS
 
@@ -22,10 +21,9 @@ console.log('Free Memory Is: ' + freeMemory)
 
 
 
-
 // File System Module Implementation ------------------------------------>
 const fs = require('fs') // Loading File System Module - Node JS
-    
+
 fs.copyFileSync('app.js' , 'app2.js') // Copying app.js to app2.js
 
 const files = fs.readdirSync('./') //Synchronous way to get files access
@@ -39,8 +37,6 @@ fs.readdir('./', function(err, files){ // Asynchronous way to get files access <
     console.log(`Result: ${files}`)
 })
 // ______________________________________________________________________________________________
-
-
 
 
 
